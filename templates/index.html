@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDataMig</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="navbar-list">
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="connection"><img id ="connection_icon" src="/static/icons/connection.png" alt="Connection Icon"> Connection</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="configure"><img id="configure_icon" src="/static/icons/configure.png" alt="Configure Icon"> Configure</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="conversion"><img id="conversion_icon" src="/static/icons/conversion.png" alt="Conversion Icon"> Conversion</a></li>
+        <!--<li class="navbar-item"><a href="#" class="navbar-link" data-tab="enums"><img src="/static/icons/enums.png" alt="Enums Icon"> Enums</a></li> -->
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="tables"><img id="tables_icon" src="/static/icons/tables.png" alt="Tables Icon"> Tables</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="tuples"><img id="tuples_icon" src="/static/icons/tuples.png" alt="Tuples Icon"> Tuples</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="primary-keys"><img id="primary-keys_icon" src="/static/icons/primary-keys.png" alt="Primary Keys Icon"> Primary Keys</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="constraints"><img id="constraints_icon" src="/static/icons/constraints.png" alt="Constraints Icon"> Constraints</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="indexes"><img id="indexes_icon" src="/static/icons/indexes.png" alt="Indexes Icon"> Indexes</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="sequences"><img id="sequences_icon" src="/static/icons/sequences.png" alt="Sequences Icon"> Sequences</a></li>
+        <li class="navbar-item"><a href="#" class="navbar-link" data-tab="validate"><img id="validate_icon" src="/static/icons/validate.png" alt="Validate Icon"> Validate</a></li>
+    </ul>
+</nav>
+
+<div id="container" class="main_container">
+
+
+    <div class="container_tabs">
+    
+    <div id="connection" class="tab-content">
+            
+            <div class="card" id="mysql-card">
+                <div class="card-icon">
+                    <img src="/static/icons/mysql_logo.png" alt="MySQL Logo">
+                </div>
+                <div class="card-content">
+                    <h3>MySQL Connection</h3>
+                    <p id="mysql-dbname">Database Name: </p>
+                    <p id="mysql-user">Username: </p>
+                    <p id="mysql-host">Host: </p>
+                    <p id="mysql-port">Port: </p>
+                    <p id="mysql-error" class="error-message"></p>
+                </div>
+            </div>
+
+            <div class="card" id="postgres-card">
+            <div class="card-icon">
+                <img src="/static/icons/postgres_logo.png" alt="PostgreSQL Logo">
+            </div>
+            <div class="card-content">
+                <h3>PostgreSQL Connection</h3>
+                <p id="postgres-dbname">Database Name: </p>
+                <p id="postgres-user">Username: </p>
+                <p id="postgres-host">Host: </p>
+                <p id="postgres-port">Port: </p>
+                <p id="postgres-error" class="error-message"></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div id="configure" class="tab-content">
+            <form id="configuration-form">
+                <div class="form-group">
+                    <label for="schema_name">Target Schema Name:</label>
+                    <input type="text" class="form-control" id="schema_name" placeholder="public">
+                </div>
+                <div class="form-group">
+                    <label for="postgres_bulk_size">Target Batch Size (bulk insert):</label>
+                    <input type="number" class="form-control" id="postgres_bulk_size" placeholder="1000">
+                </div>
+                <div class="form-group">
+                    <label for="mysql_batch_size">Source Batch Size:</label>
+                    <input type="number" class="form-control" id="mysql_batch_size" placeholder="1000">
+                </div>
+
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" onclick="BUTTON_updateConfiguration()">Update</button>
+                </div>
+                
+            </form>
+
+            <div class="form-group">
+                <label>Reset Settings</label>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" onclick="BUTTON_clear_metadata()">Reset Metadata Files</button>
+                <button type="button" class="btn btn-primary" onclick="BUTTON_clear_files()">Reset CSV Files</button>
+                <button type="button" class="btn btn-primary" onclick="BUTTON_clear_database()">Reset Target Database</button>
+            </div>
+            
+        </div>
+
+
+        <div id="conversion" class="tab-content">
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(true)">Load Tables</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_select()">Select All</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_deselect()">Deselect All</button>
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="conversion-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                        <div id = "conversion_table_info" class = "conversion_table_data_tables">
+                           
+                            <h2 id="conversion-table-name">Name</h2>
+                            <h2 id="conversion-table-tuples">Tuples</h2>
+                            <p><br></p>
+                            <h2>Columns</h2>
+                            <table id="columns-table" class="table">
+                            <thead>
+                                <tr>
+                                <th>Name</th>
+                                <th>Data Type</th>
+                                <th>Nullable</th>
+                                <th>Default</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- The  data will be filled here -->
+                            </tbody>
+                            </table>
+                            
+                            <h2>Constraints</h2>
+                            <table id="constraints-table" class="table">
+                            <thead>
+                                <tr>
+                                <th>Name</th>
+                                <th>Column Name</th>
+                                <th>Referenced Table Schema</th>
+                                <th>Referenced Table Name</th>
+                                <th>Referenced Column Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- The  data will be filled here -->
+                            </tbody>
+                            </table>
+                            
+                            <h2>Indexes</h2>
+                            <table id="indexes-table" class="table">
+                            <thead>
+                                <tr>
+                                <th>Name</th>
+                                <th>Column Name</th>
+                                <th>Nullable</th>
+                                <th>Index Type</th>
+                                <th>Non Unique</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- The  data will be filled here -->
+                            </tbody>
+                            </table>
+                    </div>
+                    </div>
+            
+            </div>
+        </div>
+
+
+        <!-- <div id="enums" class="tab-content">Content for Enums Tab</div> -->
+        <div id="tables" class="tab-content">
+
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(null)">Refresh Tables</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_migrate_tables()">Migrate Tables</button>
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="tables-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                    
+                    <div id = "tables_table_info" class = "conversion_table_data_tables">
+                        
+                        
+                    </div>
+            
+                </div>
+            </div>
+        
+        </div>
+
+
+
+        <div id="tuples" class="tab-content">
+
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(null)">Refresh Tuples</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_migrate_tuples()">Migrate Tuples</button>
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="tuples-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                    <h2>Writing Intermediate File</h2>
+                    <div class="progress-bar" id="intermediate_file_progress">
+                        <div class="progress"></div>
+                        <div class="label">
+                            <span class="name"></span>
+                            <span class="data">0 / 0</span>
+                        </div>
+                    </div>
+                    <h2>Migration to target</h2>
+                    <div class="progress-bar" id="migrate_progress">
+                        <div class="progress"></div>
+                        <div class="label">
+                            <span class="name"></span>
+                            <span class="data">0 / 0</span>
+                        </div>
+                    </div>
+
+            
+                </div>
+            </div>
+        
+        </div>
+
+
+
+
+
+
+        <div id="primary-keys" class="tab-content">
+
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(null)">Refresh Primary Keys</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_migrate_primary_keys()">Migrate Primary Keys</button>
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="primary-keys-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                    
+                    <div id = "primary-keys_table_info" class = "conversion_table_data_tables">
+                        
+                        
+                    </div>
+            
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div id="constraints" class="tab-content">
+
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(null)">Refresh Constraints</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_migrate_constraints()">Migrate Constraints</button>
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="constraints-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                    
+                    <div id = "constraints_table_info" class = "conversion_table_data_tables">
+                        
+                    </div>
+            
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="indexes" class="tab-content">
+
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(null)">Refresh Indexes</button>
+            <button type="button" class="btn btn-primary" onclick="BUTTON_migrate_indexes()">Migrate Indexes</button>
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="indexes-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                    
+                    <div id = "indexes_table_info" class = "conversion_table_data_tables">
+                            <h2>Table:</h2>
+                            <h2 id="indexes-table-name"></h2>
+                            <p><br></p>
+
+                            <h2>Indexes</h2>
+                            <table id="indexes-table-with-button" class="table">
+                            <thead>
+                                <tr>
+                                <th>Name</th>
+                                <th>Excluded</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- The  data will be filled here -->
+                            </tbody>
+                            </table>
+                    </div>
+                
+                </div>
+        </div>
+</div>
+
+
+        <div id="sequences" class="tab-content">
+            <button type="button" class="btn btn-primary" onclick="BUTTON_load_metadata(null)">Refresh Sequences</button>
+
+
+            <div class="conversion_main">
+                
+                <div class="conversion_data">
+                    <div id="sequences-grid-container" class="grid-container"></div>
+                </div>
+                <div class="conversion_table_data">
+                        <div id = "sequences_table_info" class = "conversion_table_data_tables">
+                            <h2>Table:</h2>
+                            <h2 id="sequences-table-name"></h2>
+                            <p><br></p>
+
+                            <div class="form-group">
+                                <label>Current Last Sequence Value:</label>
+                                <input type="number" class="form-control" id="current_sequence" placeholder="">
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary" onclick="BUTTON_update_sequence()">Update Sequence</button>
+                            
+                        </div>
+                </div>
+            
+            </div>
+        </div>
+
+
+        
+        <div id="validate" class="tab-content"></div>
+
+
+    </div>
+
+
+    <div class="log_container">
+        <div id="result_log" class="log"></div>
+    </div>
+
+    
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+<script src="/static/js/scripts.js"></script>
+</body>
+</html>

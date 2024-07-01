@@ -1,0 +1,21 @@
+from enum import Enum
+
+
+class LoggingLevel(Enum):
+    READ_METADATA = 61
+    GENERATE_DDL = 62
+    EXECUTE_DDL_ENUM = 63
+    EXECUTE_DDL_TABLE = 64
+    EXECUTE_DDL_MIGRATION = 65
+    EXECUTE_DDL_PK = 66
+    EXECUTE_DDL_CONSTRAINTS = 67
+    EXECUTE_DDL_INDEXES = 68
+
+    CRITICAL = 50
+    FATAL = CRITICAL
+    ERROR = 40
+    WARNING = 30
+    WARN = WARNING
+    INFO = 20
+    DEBUG = 10
+    NOTSET = 0

@@ -1,0 +1,14 @@
+./env
+.env
+*.pyc
+poetry.lock
+test.json
+create_tables.sql
+metadata.json
+databases.env
+databases.config
+/pg_sandbox/data/
+data/
+config.json
+tables_log.json
+progress.json
