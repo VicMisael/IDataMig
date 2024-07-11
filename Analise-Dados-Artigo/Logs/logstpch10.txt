@@ -1,0 +1,165 @@
+run:0, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 45.14585208892822 seconds
+Migration of Table:lineitem is 3599.343010187149 seconds
+Migration of Table:nation is 0.004987001419067383 seconds
+Migration of Table:orders is 706.6484308242798 seconds
+Migration of Table:part is 84.48149156570435 seconds
+Migration of Table:partsupp is 298.51487946510315 seconds
+Migration of Table:region is 0.016408205032348633 seconds
+Migration of Table:supplier is 19.03963613510132 seconds
+Total Elapsed by the tuples migration is 4753.203772068024 seconds
+run:1, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 46.06465458869934 seconds
+Migration of Table:lineitem is 3645.9515693187714 seconds
+Migration of Table:nation is 0.005141735076904297 seconds
+Migration of Table:orders is 643.2641770839691 seconds
+Migration of Table:part is 96.64461827278137 seconds
+Migration of Table:partsupp is 326.5221281051636 seconds
+Migration of Table:region is 0.005127429962158203 seconds
+Migration of Table:supplier is 2.3786685466766357 seconds
+Total Elapsed by the tuples migration is 4760.850606679916 seconds
+run:2, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 57.58555507659912 seconds
+Migration of Table:lineitem is 3646.3171570301056 seconds
+Migration of Table:nation is 0.0052337646484375 seconds
+Migration of Table:orders is 642.7503545284271 seconds
+Migration of Table:part is 70.66859030723572 seconds
+Migration of Table:partsupp is 347.7664794921875 seconds
+Migration of Table:region is 0.0051915645599365234 seconds
+Migration of Table:supplier is 2.3675317764282227 seconds
+Total Elapsed by the tuples migration is 4767.688090085983 seconds
+run:3, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 91.69711661338806 seconds
+Migration of Table:lineitem is 3613.455106496811 seconds
+Migration of Table:nation is 0.007090568542480469 seconds
+Migration of Table:orders is 593.523695230484 seconds
+Migration of Table:part is 71.38739275932312 seconds
+Migration of Table:partsupp is 312.78048849105835 seconds
+Migration of Table:region is 0.004878997802734375 seconds
+Migration of Table:supplier is 2.3681819438934326 seconds
+Total Elapsed by the tuples migration is 4685.231223344803 seconds
+run:4, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 52.81849932670593 seconds
+Migration of Table:lineitem is 3482.1698565483093 seconds
+Migration of Table:nation is 0.0058727264404296875 seconds
+Migration of Table:orders is 581.7478713989258 seconds
+Migration of Table:part is 96.74586868286133 seconds
+Migration of Table:partsupp is 286.53234124183655 seconds
+Migration of Table:region is 0.00458216667175293 seconds
+Migration of Table:supplier is 2.350019931793213 seconds
+Total Elapsed by the tuples migration is 4502.744809150696 seconds
+run:5, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 45.49942421913147 seconds
+Migration of Table:lineitem is 3629.3533577919006 seconds
+Migration of Table:nation is 0.005592823028564453 seconds
+Migration of Table:orders is 632.7202887535095 seconds
+Migration of Table:part is 96.11122345924377 seconds
+Migration of Table:partsupp is 333.898047208786 seconds
+Migration of Table:region is 0.004825115203857422 seconds
+Migration of Table:supplier is 2.3532800674438477 seconds
+Total Elapsed by the tuples migration is 4740.330993652344 seconds
+run:6, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 71.17443013191223 seconds
+Migration of Table:lineitem is 5230.0086216926575 seconds
+Migration of Table:nation is 0.005493879318237305 seconds
+Migration of Table:orders is 757.2941699028015 seconds
+Migration of Table:part is 88.22854971885681 seconds
+Migration of Table:partsupp is 445.64347195625305 seconds
+Migration of Table:region is 0.8628878593444824 seconds
+Migration of Table:supplier is 18.960103511810303 seconds
+Total Elapsed by the tuples migration is 6612.571174383163 seconds
+run:7, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 63.329275608062744 seconds
+Migration of Table:lineitem is 3792.7848913669586 seconds
+Migration of Table:nation is 0.005238771438598633 seconds
+Migration of Table:orders is 676.9150931835175 seconds
+Migration of Table:part is 106.65740251541138 seconds
+Migration of Table:partsupp is 431.49612069129944 seconds
+Migration of Table:region is 0.01818060874938965 seconds
+Migration of Table:supplier is 4.128103494644165 seconds
+Total Elapsed by the tuples migration is 5075.490938425064 seconds
+run:8, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 66.2175645828247 seconds
+Migration of Table:lineitem is 3682.810736179352 seconds
+Migration of Table:nation is 0.005041360855102539 seconds
+Migration of Table:orders is 749.8144836425781 seconds
+Migration of Table:part is 109.57577466964722 seconds
+Migration of Table:partsupp is 404.5005624294281 seconds
+Migration of Table:region is 0.004734039306640625 seconds
+Migration of Table:supplier is 2.3512954711914062 seconds
+Total Elapsed by the tuples migration is 5015.283173084259 seconds
+run:9, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 67.55471420288086 seconds
+Migration of Table:lineitem is 6841.89044213295 seconds
+Migration of Table:nation is 0.07842302322387695 seconds
+Migration of Table:orders is 688.6770939826965 seconds
+Migration of Table:part is 78.9666223526001 seconds
+Migration of Table:partsupp is 331.61456274986267 seconds
+Migration of Table:region is 0.07627201080322266 seconds
+Migration of Table:supplier is 15.166940450668335 seconds
+Total Elapsed by the tuples migration is 8024.063761711121 seconds
+run:10, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 64.93110060691833 seconds
+Migration of Table:lineitem is 4502.055723667145 seconds
+Migration of Table:nation is 0.025661945343017578 seconds
+Migration of Table:orders is 681.6369330883026 seconds
+Migration of Table:part is 94.88941240310669 seconds
+Migration of Table:partsupp is 376.2211666107178 seconds
+Migration of Table:region is 0.005808353424072266 seconds
+Migration of Table:supplier is 2.5542547702789307 seconds
+Total Elapsed by the tuples migration is 5722.652905464172 seconds
+run:11, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 82.20472550392151 seconds
+Migration of Table:lineitem is 4002.771604537964 seconds
+Migration of Table:nation is 0.005443572998046875 seconds
+Migration of Table:orders is 746.8591225147247 seconds
+Migration of Table:part is 101.32935643196106 seconds
+Migration of Table:partsupp is 381.98318886756897 seconds
+Migration of Table:region is 0.006287097930908203 seconds
+Migration of Table:supplier is 2.353010416030884 seconds
+Total Elapsed by the tuples migration is 5317.5166182518005 seconds
+run:12, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 73.1120183467865 seconds
+Migration of Table:lineitem is 4012.0136754512787 seconds
+Migration of Table:nation is 0.011347293853759766 seconds
+Migration of Table:orders is 645.3567533493042 seconds
+Migration of Table:part is 81.96147847175598 seconds
+Migration of Table:partsupp is 397.0332176685333 seconds
+Migration of Table:region is 0.04403328895568848 seconds
+Migration of Table:supplier is 14.733101844787598 seconds
+Total Elapsed by the tuples migration is 5224.341763496399 seconds
+run:13, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 82.62626099586487 seconds
+Migration of Table:lineitem is 4191.908500909805 seconds
+Migration of Table:nation is 0.00479435920715332 seconds
+Migration of Table:orders is 834.6205546855927 seconds
+Migration of Table:part is 137.42030310630798 seconds
+Migration of Table:partsupp is 472.6497857570648 seconds
+Migration of Table:region is 0.27625417709350586 seconds
+Migration of Table:supplier is 16.593385696411133 seconds
+Total Elapsed by the tuples migration is 5736.365608692169 seconds
+run:14, PostgresBulk:20000, MysqlBatch:1000
+File 'metadata.json' not found.
+Migration of Table:customer is 64.3477783203125 seconds
+Migration of Table:lineitem is 4161.599315643311 seconds
+Migration of Table:nation is 0.03285384178161621 seconds
+Migration of Table:orders is 1001.0556335449219 seconds
+Migration of Table:part is 119.52768301963806 seconds
+Migration of Table:partsupp is 616.9012463092804 seconds
+Migration of Table:region is 0.0059969425201416016 seconds
+Migration of Table:supplier is 2.3565521240234375 seconds
+Total Elapsed by the tuples migration is 5965.956460475922 seconds

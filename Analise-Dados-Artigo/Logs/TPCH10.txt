@@ -1,0 +1,73 @@
+2024-06-04 13:02:29,764 - DB Migrator - ERROR - Time Elapsed by the Migration is 0.03167223930358887 seconds
+2024-06-04 13:03:33,667 - DB Migrator - ERROR - Migration of Table:customer is 47.22158241271973 seconds
+2024-06-04 14:04:14,379 - DB Migrator - ERROR - Migration of Table:lineitem is 3640.7111587524414 seconds
+2024-06-04 14:04:14,386 - DB Migrator - ERROR - Migration of Table:nation is 0.006750822067260742 seconds
+2024-06-04 14:12:37,916 - DB Migrator - ERROR - Migration of Table:orders is 503.52972435951233 seconds
+2024-06-04 14:14:00,980 - DB Migrator - ERROR - Migration of Table:part is 83.06343531608582 seconds
+2024-06-04 14:17:50,028 - DB Migrator - ERROR - Migration of Table:partsupp is 229.04746341705322 seconds
+2024-06-04 14:17:50,033 - DB Migrator - ERROR - Migration of Table:region is 0.005558013916015625 seconds
+2024-06-04 14:17:52,800 - DB Migrator - ERROR - Migration of Table:supplier is 2.7658755779266357 seconds
+2024-06-04 14:17:52,800 - DB Migrator - ERROR - Total Elapsed by the  is 4506.354669094086 seconds
+
+2024-06-04 17:08:17,954 - DB Migrator - ERROR - Time Elapsed by the Migration is 0.030969619750976562 seconds
+2024-06-04 17:09:12,013 - DB Migrator - ERROR - Migration of Table:customer is 48.089519739151 seconds
+2024-06-04 18:08:56,461 - DB Migrator - ERROR - Migration of Table:lineitem is 3584.4474737644196 seconds
+2024-06-04 18:08:56,475 - DB Migrator - ERROR - Migration of Table:nation is 0.014170646667480469 seconds
+2024-06-04 18:18:03,755 - DB Migrator - ERROR - Migration of Table:orders is 547.2794239521027 seconds
+2024-06-04 18:19:34,834 - DB Migrator - ERROR - Migration of Table:part is 91.07805800437927 seconds
+2024-06-04 18:23:32,301 - DB Migrator - ERROR - Migration of Table:partsupp is 237.46699929237366 seconds
+2024-06-04 18:23:32,307 - DB Migrator - ERROR - Migration of Table:region is 0.0057811737060546875 seconds
+2024-06-04 18:23:34,909 - DB Migrator - ERROR - Migration of Table:supplier is 2.6012914180755615 seconds
+2024-06-04 18:23:34,909 - DB Migrator - ERROR - Total Elapsed by the  is 4510.985937833786 seconds
+
+2024-06-05 11:06:52,991 - DB Migrator - ERROR - Time Elapsed by the Migration is 0.032652854919433594 seconds
+2024-06-05 11:07:44,057 - DB Migrator - ERROR - Migration of Table:customer is 45.48275136947632 seconds
+2024-06-05 12:08:57,716 - DB Migrator - ERROR - Migration of Table:lineitem is 3673.658604860306 seconds
+2024-06-05 12:08:57,723 - DB Migrator - ERROR - Migration of Table:nation is 0.005975246429443359 seconds
+2024-06-05 12:18:48,571 - DB Migrator - ERROR - Migration of Table:orders is 590.848522901535 seconds
+2024-06-05 12:19:55,736 - DB Migrator - ERROR - Migration of Table:part is 67.16421937942505 seconds
+2024-06-05 12:23:52,857 - DB Migrator - ERROR - Migration of Table:partsupp is 237.0779252052307 seconds
+2024-06-05 12:23:52,863 - DB Migrator - ERROR - Migration of Table:region is 0.005082368850708008 seconds
+2024-06-05 12:23:57,563 - DB Migrator - ERROR - Migration of Table:supplier is 4.699467182159424 seconds
+2024-06-05 12:23:57,563 - DB Migrator - ERROR - Total Elapsed by the  is 4618.988491773605 seconds
+
+2024-06-05 15:48:05,586 - DB Migrator - ERROR - Migration of Table:customer is 45.72741389274597 seconds
+2024-06-05 16:49:33,051 - DB Migrator - ERROR - Migration of Table:lineitem is 3687.464769601822 seconds
+2024-06-05 16:49:33,056 - DB Migrator - ERROR - Migration of Table:nation is 0.0050389766693115234 seconds
+2024-06-05 16:58:35,865 - DB Migrator - ERROR - Migration of Table:orders is 542.80810546875 seconds
+2024-06-05 16:59:57,691 - DB Migrator - ERROR - Migration of Table:part is 81.82537293434143 seconds
+2024-06-05 17:03:58,591 - DB Migrator - ERROR - Migration of Table:partsupp is 240.89960074424744 seconds
+2024-06-05 17:03:58,596 - DB Migrator - ERROR - Migration of Table:region is 0.00519871711730957 seconds
+2024-06-05 17:04:01,333 - DB Migrator - ERROR - Migration of Table:supplier is 2.7365427017211914 seconds
+2024-06-05 17:04:01,333 - DB Migrator - ERROR - Total Elapsed by the  is 4601.475180387497 seconds
+
+
+2024-06-05 22:53:38,661 - DB Migrator - WARNING - Clearing metadata file: metadata.json
+2024-06-05 22:53:38,661 - DB Migrator - WARNING - Clearing metadata file: progress.json
+2024-06-05 22:53:42,775 - DB Migrator - WARNING - Clearing folder: data
+2024-06-05 22:54:09,107 - DB Migrator - ERROR - File 'metadata.json' not found.
+2024-06-05 22:54:17,008 - DB Migrator - ERROR - Time Elapsed by the Migration is 0.03077101707458496 seconds
+2024-06-05 22:55:21,355 - DB Migrator - ERROR - Migration of Table:customer is 45.81881904602051 seconds
+2024-06-05 23:55:09,505 - DB Migrator - ERROR - Migration of Table:lineitem is 3588.1379981040955 seconds
+2024-06-05 23:55:09,511 - DB Migrator - ERROR - Migration of Table:nation is 0.005341291427612305 seconds
+2024-06-06 00:05:14,565 - DB Migrator - ERROR - Migration of Table:orders is 605.0541951656342 seconds
+2024-06-06 00:06:39,630 - DB Migrator - ERROR - Migration of Table:part is 85.02554631233215 seconds
+2024-06-06 00:11:35,498 - DB Migrator - ERROR - Migration of Table:partsupp is 295.8672134876251 seconds
+2024-06-06 00:11:35,503 - DB Migrator - ERROR - Migration of Table:region is 0.004900693893432617 seconds
+2024-06-06 00:11:37,991 - DB Migrator - ERROR - Migration of Table:supplier is 2.4877209663391113 seconds
+2024-06-06 00:11:37,992 - DB Migrator - ERROR - Total Elapsed by the  is 4622.4561359882355 seconds
+
+2024-06-06 03:29:52,821 - DB Migrator - WARNING - Clearing metadata file: metadata.json
+2024-06-06 03:29:52,821 - DB Migrator - WARNING - Clearing metadata file: progress.json
+2024-06-06 03:29:55,293 - DB Migrator - WARNING - Clearing folder: data
+2024-06-06 03:30:10,637 - DB Migrator - ERROR - File 'metadata.json' not found.
+2024-06-06 03:30:19,013 - DB Migrator - ERROR - Time Elapsed by the Migration is 0.029799938201904297 seconds
+2024-06-06 03:31:06,590 - DB Migrator - ERROR - Migration of Table:customer is 44.4851348400116 seconds
+2024-06-06 04:30:20,038 - DB Migrator - ERROR - Migration of Table:lineitem is 3553.44726061821 seconds
+2024-06-06 04:30:20,043 - DB Migrator - ERROR - Migration of Table:nation is 0.0054166316986083984 seconds
+2024-06-06 04:39:35,399 - DB Migrator - ERROR - Migration of Table:orders is 555.3555707931519 seconds
+2024-06-06 04:40:53,665 - DB Migrator - ERROR - Migration of Table:part is 78.26555871963501 seconds
+2024-06-06 04:45:09,246 - DB Migrator - ERROR - Migration of Table:partsupp is 255.58094239234924 seconds
+2024-06-06 04:45:09,252 - DB Migrator - ERROR - Migration of Table:region is 0.005155801773071289 seconds
+2024-06-06 04:45:12,111 - DB Migrator - ERROR - Migration of Table:supplier is 2.858457565307617 seconds
+2024-06-06 04:45:12,111 - DB Migrator - ERROR - Total Elapsed by the  is 4490.006639242172 seconds
