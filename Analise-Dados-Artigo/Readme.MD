@@ -4,8 +4,7 @@ Este repositório contém os materiais e análises realizadas no estudo de padr�
 
 ## Estrutura do Repositório
 
-- `Artigo.pdf`: Este arquivo contém o artigo completo que discute os métodos utilizados na análise e os insights obtidos a partir dos dados.
-- `Análise_Heatmap.ipynb`: Jupyter Notebook com o código utilizado para gerar os heatmaps e realizar a análise de dados.
+- `testes_estatísticos.ipynb`: Jupyter Notebook com o código utilizado para gerar os heatmaps e realizar a análise de dados.
 - `heatmap2.png`: Imagem do heatmap gerado como parte da análise. Este heatmap é discutido em detalhes no artigo e no notebook.
 
 ## Como Usar
